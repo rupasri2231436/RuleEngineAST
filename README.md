@@ -5,14 +5,19 @@ This project implements a simple 3-tier rule engine application using Flask, SQL
 # Setup
 
 Install the required dependencies:
+
 pip install flask sqlalchemy
+
 Run the Flask application: bash python main.py
 
-# COMPONENTS
+# Components
 
 Backend : main.py (Flask Python SQLAlchemy)
+
 Frontend : rlg.py (Tkinter UI Python)
+
 Automated test script : test.py (Automatically test the app) (requests)
+
 APP COMPONENTS
 
 CREATE RULE : will create a rule and show id in UI. for eg: you create two rules it will create two rules with id 1 and 2
