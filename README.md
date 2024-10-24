@@ -2,13 +2,14 @@
 
 This project implements a simple 3-tier rule engine application using Flask, SQLAlchemy, and SQLite. It allows for the creation, combination, and evaluation of rules based on Abstract Syntax Trees (ASTs).
 
-#Setup
+**
+Setup**
 
 Install the required dependencies:
 pip install flask sqlalchemy
 Run the Flask application: bash python main.py
-
-COMPONENTS
+**
+COMPONENTS**
 
 Backend : main.py (Flask Python SQLAlchemy)
 Frontend : rlg.py (Tkinter UI Python)
