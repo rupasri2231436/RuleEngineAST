@@ -2,14 +2,13 @@
 
 This project implements a simple 3-tier rule engine application using Flask, SQLAlchemy, and SQLite. It allows for the creation, combination, and evaluation of rules based on Abstract Syntax Trees (ASTs).
 
-**
-Setup**
+**Setup**
 
 Install the required dependencies:
 pip install flask sqlalchemy
 Run the Flask application: bash python main.py
-**
-COMPONENTS**
+
+**COMPONENTS**
 
 Backend : main.py (Flask Python SQLAlchemy)
 Frontend : rlg.py (Tkinter UI Python)
@@ -59,23 +58,6 @@ def test_modify_rule(rule_id, new_rule_string): print("\nTesting modify_rule..."
 
 if name == "main": # Create Rule 1 rule_string_1 = "(age > 30 AND department = 'Sales')" rule_id_1 = test_create_rule(rule_string_1)
 
-# Create Rule 2
-rule_string_2 = "(salary > 50000 OR experience > 5)"
-rule_id_2 = test_create_rule(rule_string_2)
+![image](https://github.com/user-attachments/assets/5795afdd-8cad-45cf-86c5-786ddd7fa4db)
 
-# Combine Rules
-combined_rule_id = test_combine_rules(rule_id_1, rule_id_2)
-
-# Evaluate Combined Rule
-data = {
-    "age": 35,
-    "department": "Sales",
-    "salary": 60000,
-    "experience": 6
-}
-test_evaluate_rule(combined_rule_id, data)
-
-# Modify Rule
-new_rule_string = "age > 40 AND department = 'HR'"
-test_modify_rule(rule_id_1, new_rule_string)
 Summary This updated README provides clear instructions on setting up, running, and testing the rule engine application. The test.py script automates the testing process, ensuring that the rule engine's functionality is verified correctly. By following these instructions, you can ensure that your rule engine application is working as expected.
